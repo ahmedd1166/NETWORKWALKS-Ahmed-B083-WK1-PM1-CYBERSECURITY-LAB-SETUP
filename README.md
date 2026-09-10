@@ -113,8 +113,7 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 
-![](<img width="1280" height="800" alt="wifi settings" src="https://github.com/user-attachments/assets/e7882293-7cdf-4bba-bbf1-41cf4e96e4f9" />
-)
+![](<img width="1280" height="800" alt="wifi settings" src="https://github.com/user-attachments/assets/0b2b6895-7b51-41b6-acfe-c91e71ffbfd9" />)
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
