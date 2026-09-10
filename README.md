@@ -2,7 +2,7 @@
 An Isolated virtual Kali Linux lab for cybersecurity testing and penetration testing practice.
 <div align="center">
 
-# 🔐 Cybersecurity Lab Environment Setup
+#  Cybersecurity Lab Environment Setup
 
 **Building an isolated virtual lab for penetration testing and ethical hacking practice**
 </div>
@@ -36,7 +36,7 @@ The lab uses a private virtual network, allowing other machines to be added late
 ---
 
 
-## 🎯 Objectives
+##  Objectives:
 
 The main objectives:
 
@@ -51,7 +51,7 @@ The main objectives:
 
 ---
 
-## 🛡️ Purpose of the Lab
+##  Purpose of the Lab:
 
 The lab creates a safe and separate environment for learning cybersecurity and carrying out authorized security tests.
 
@@ -68,7 +68,7 @@ It can be used for tasks such as:
 ---
 
 
-## ⚙️ Lab Configuration
+## : Lab Configuration
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
@@ -87,11 +87,11 @@ It can be used for tasks such as:
 
 ---
 
-# 🪜 Lab Setup Procedure
+# Lab Setup Step by Step:
 
 ## Step 1. Install 7-Zip
 
-7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+Installed 7-Zip to extract Kali file
 
 **Tool:** 7-Zip
 
@@ -113,7 +113,8 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 
-![](<img width="1280" height="800" alt="wifi settings" src="https://github.com/user-attachments/assets/0b2b6895-7b51-41b6-acfe-c91e71ffbfd9" />)
+![Wi-Fi Settings](wifi%20settings.png)
+
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
