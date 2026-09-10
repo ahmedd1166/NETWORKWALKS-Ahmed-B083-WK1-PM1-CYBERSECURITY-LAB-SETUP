@@ -24,70 +24,60 @@ An Isolated virtual Kali Linux lab for cybersecurity testing and penetration tes
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
-This project focuses on setting up a **virtual cybersecurity and penetration-testing laboratory** using VirtualBox and Kali Linux.
+This project is about creating a **virtual cybersecurity and penetration-testing lab** using VirtualBox and Kali Linux.
 
-The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
+The aim is to build a safe and controlled environment where cybersecurity tools can be used for tasks such as network scanning, reconnaissance, and vulnerability testing.
 
-The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
+The lab uses a private virtual network, allowing other machines to be added later as targets for **authorized security testing**.
+
 
 ---
 
 
 ## 🎯 Objectives
 
-The main objectives of this project are to:
+The main objectives:
 
 - Install and configure VirtualBox.
-- Install/import Kali Linux as a virtual machine.
+- Install and import Kali Linux as a virtual machine.
 - Create a private **NAT Network** for the cybersecurity lab.
 - Configure network connectivity for Kali Linux.
 - Assign a consistent IP address to the Kali VM.
 - Verify network connectivity and DNS resolution.
-- Take a clean VM snapshot for recovery.
+- Take a snapshot for recovery.
 - Document the complete setup process.
-- Prepare the environment for future cybersecurity projects.
 
 ---
 
 ## 🛡️ Purpose of the Lab
 
-The lab provides an isolated and controlled environment for cybersecurity learning and authorized security testing.
+The lab creates a safe and separate environment for learning cybersecurity and carrying out authorized security tests.
 
-It can be used for activities such as:
+It can be used for tasks such as:
 
-- Network reconnaissance
-- Port scanning
-- Vulnerability assessment
-- Packet analysis
-- Web security testing
-- Exploitation practice
-- Security-tool experimentation
-
-⚠️ **Important:** This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
+* Network discovery
+* Port scanning
+* Finding security weaknesses
+* Analyzing network traffic
+* Testing web applications
+* Practicing exploitation techniques
+* Trying out different security tools
 
 ---
 
-## 🏗️ Lab Architecture
-
-![](1-screenshot-title-image.png)
-
-
-Additional target machines can be added to the same virtual network in future projects.
-
----
 
 ## ⚙️ Lab Configuration
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10         |
+| 🖥️ Host OS         | Windows 11         |
 | 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel Core i7      |
-| 🧰 Hypervisor      | VirtualBox 7.2  |
+| ⚡ Processor       | Intel Core i5      |
+| 🧰 Hypervisor      | VirtualBox         |
 | 🐉 Security OS     | Kali Linux 2026.2  |
-| 🧠 Kali RAM        | 2048 MB            |
+| 🧠 Kali RAM        | 4096 MB            |
 | 🌐 Virtual Network | NAT Network        |
 | 📡 Network Address | 10.0.0.0/24        |
 | 🐧 Kali IP Address | 10.0.0.2/24        |
@@ -123,7 +113,8 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 
-![](2-screenshot-network-settings-1.png)
+![](<img width="1280" height="800" alt="wifi settings" src="https://github.com/user-attachments/assets/e7882293-7cdf-4bba-bbf1-41cf4e96e4f9" />
+)
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
