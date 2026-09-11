@@ -68,7 +68,7 @@ It can be used for tasks such as:
 ---
 
 
-## : Lab Configuration
+## Lab Configuration:
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
@@ -103,7 +103,7 @@ VirtualBox was installed as the hypervisor.
 
 ---
 
-## Step 3. Create the NAT Network
+## Step 3. Create a NAT Network
 
 A dedicated NAT Network was created in VirtualBox.
 
@@ -116,16 +116,16 @@ IPv6:         Disabled
 
 
 
-A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
+A NAT Network was chosen so that multiple virtual machines can connect to the same network and communicate with each other while still having internet access.
 
-This will allow future attacker and target VMs to communicate within the lab.
+This setup also makes it possible to add attacker and target VMs later for testing within the lab.
 
 
 ---
 
 ## Step 4. Import Kali Linux
 
-The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+The Kali Linux virtual machine was downloaded from the official Kali Linux website and then imported into VirtualBox.
 
 The VM network adapter was configured as follows:
 
@@ -133,7 +133,6 @@ The VM network adapter was configured as follows:
 Adapter 1
 Attached to: NAT Network
 Network:     NatNetwork
-Adapter Type: Intel PRO/1000 MT Desktop
 ```
 
 The VM was allocated:
