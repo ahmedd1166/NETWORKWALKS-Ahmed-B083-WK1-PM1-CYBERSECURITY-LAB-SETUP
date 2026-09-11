@@ -290,10 +290,10 @@ This laboratory is intended strictly for education purposes only.
 
 # 👤 Author
 
-**Waqas Karim**\
-Cybersecurity Professional B082
+**Ahmed Ayman Abdelhalim Moustafa Ahmed**\
+Cybersecurity Professional B083-C
 
-LinkedIn: [https://www.linkedin.com/in/waqaskarim/](https://www.linkedin.com/in/waqaskarim/)
+LinkedIn: [https://www.linkedin.com/in/ahmed-ayman-ahmed-a56364344?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---
 
