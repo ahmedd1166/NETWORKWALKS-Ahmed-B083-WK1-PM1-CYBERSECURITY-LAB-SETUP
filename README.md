@@ -24,7 +24,7 @@ An Isolated virtual Kali Linux lab for cybersecurity testing and penetration tes
 
 ---
 
-## Project Overview
+## Project Overview:
 
 This project is about creating a **virtual cybersecurity and penetration-testing lab** using VirtualBox and Kali Linux.
 
@@ -70,26 +70,26 @@ It can be used for tasks such as:
 
 ## Lab Configuration:
 
-| 🧩 Component       | ⚙️ Configuration   |
+|  Component       |  Configuration   |
 | ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 11         |
-| 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel Core i5      |
-| 🧰 Hypervisor      | VirtualBox         |
-| 🐉 Security OS     | Kali Linux 2026.2  |
-| 🧠 Kali RAM        | 4096 MB            |
-| 🌐 Virtual Network | NAT Network        |
-| 📡 Network Address | 10.0.0.0/24        |
-| 🐧 Kali IP Address | 10.0.0.2/24        |
-| 🚪 Default Gateway | 10.0.0.1           |
-| 🌍 DNS Server      | 8.8.8.8            |
-| 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
+|  Host OS         | Windows 11         |
+|  Host RAM        | 8 GB               |
+|  Processor       | Intel Core i5      |
+|  Hypervisor      | VirtualBox         |
+|  Security OS     | Kali Linux 2026.2  |
+|  Kali RAM        | 4096 MB            |
+|  Virtual Network | NAT Network        |
+|  Network Address | 10.0.0.0/24        |
+|  Kali IP Address | 10.0.0.2/24        |
+|  Default Gateway | 10.0.0.1           |
+|  DNS Server      | 8.8.8.8            |
+|  Future VM Range | 10.0.0.3–10.0.0.99 |
 
 ---
 
 # Lab Setup Step by Step:
 
-## Step 1. Install 7-Zip
+## Step 1 Install 7-Zip:
 
 Installed 7-Zip to extract Kali file
 
@@ -97,13 +97,13 @@ Installed 7-Zip to extract Kali file
 
 ---
 
-## Step 2. Install VirtualBox
+## Step 2 Install VirtualBox:
 
 VirtualBox was installed as the hypervisor.
 
 ---
 
-## Step 3. Create a NAT Network
+## Step 3 Create a NAT Network:
 
 A dedicated NAT Network was created in VirtualBox.
 
@@ -123,7 +123,7 @@ This setup also makes it possible to add attacker and target VMs later for testi
 
 ---
 
-## Step 4. Import Kali Linux
+## Step 4 Import Kali Linux:
 
 The Kali Linux virtual machine was downloaded from the official Kali Linux website and then imported into VirtualBox.
 
@@ -147,7 +147,7 @@ A shared folder was also configured for transferring required files between the 
 
 ---
 
-## Step 5. Configure the Kali Linux Network
+## Step 5 Configure the Kali Linux Network:
 
 The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
 
@@ -164,7 +164,7 @@ DNS: 8.8.8.8
 
 ---
 
-## Step 6. Create a Clean VM Snapshot
+## Step 6 Create a Clean VM Snapshot:
 
 ![Kali Linux snapshot](snapshot.jpeg)
 
@@ -202,83 +202,33 @@ DNS:
 
 ---
 
-# 🐞 Problems Encountered & Solutions
+# What I Learned:
 
-Documenting problems is an important part of the project.
+Through this project, I learned how to build and configure a virtual environment for cybersecurity practice.
 
-## Problem 1. Internet Connectivity After Static IP Configuration
+The main things I learned were:
 
-After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
+1. NAT vs NAT Network
 
-One workaround used during this lab was:
+I learned that NAT and NAT Network work differently.
 
-```bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
-```
+A NAT Network allows multiple VMs to communicate with each other while still providing internet access which makes it useful for creating a cybersecurity lab with multiple machines.
 
-The network connection was then restarted/rebooted and connectivity was tested again.
 
-> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command.
+2. Static IP Configuration
 
----
+I learned how to set up and check IP addresses, subnet masks, gateways, and DNS settings in Kali Linux.
 
-## Problem 2. VirtualBox VT-x / Virtualization Error
+3. VM Snapshots
 
-The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
+I learned that creating a clean snapshot before testing is important. It provides a safe restore point if something goes wrong during future experiments.
 
-The issue was resolved by:
+4. Documentation
 
-1. Restarting the computer.
-2. Entering BIOS/UEFI settings.
-3. Enabling Intel VT-x / hardware virtualization.
-4. Saving the configuration.
-5. Restarting the computer.
-6. Starting the Kali VM again.
-
-After enabling virtualization, the VM started successfully.
-
+I learned that keeping clear records of commands, settings, screenshots, problems, and solutions is an important part of cybersecurity work.
 
 ---
 
-# 💡 What I Learned
-
-Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
-
-The most important concepts I learned include:
-
-### 1. NAT vs NAT Network
-
-A standard NAT configuration and a NAT Network serve different purposes.
-
-A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
-
-This makes it useful for building a multi-machine cybersecurity laboratory.
-
-### 2. Virtual Machine Networking
-
-I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
-
-### 3. Static IP Configuration
-
-I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
-
-### 4. VM Snapshots
-
-I learned that a clean snapshot should be created **before performing risky or experimental activities**.
-
-This provides a known-good recovery point for future cybersecurity exercises.
-
-### 5. Documentation
-
-I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
-
----
-
-# 🔐 Security & Ethical Use
-
-This laboratory is intended strictly for education purposes only.
-
----
 
 # 🔗 Tools & Resources
 
