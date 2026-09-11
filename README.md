@@ -166,7 +166,7 @@ DNS: 8.8.8.8
 
 ## Step 6. Create a Clean VM Snapshot
 
-![Kali Linux Snapshot](snapshot%20screenshot.png)
+![Kali Linux snapshot](snapshot%20screenshot.png)
 
 
 A snapshot shows the clean starting state of the lab.
