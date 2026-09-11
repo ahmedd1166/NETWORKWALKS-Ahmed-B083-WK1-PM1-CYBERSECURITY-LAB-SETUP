@@ -166,7 +166,7 @@ DNS: 8.8.8.8
 
 ## Step 6. Create a Clean VM Snapshot
 
-![Kali Linux snapshot](snapshot%20screenshot.png)
+![Kali Linux snapshot](snapshot.jpeg)
 
 
 A snapshot shows the clean starting state of the lab.
@@ -180,10 +180,10 @@ If any future testing changes or breaks the VM, it can be restored to this saved
 
 |   Test                        |  Command                      | Expected Result              |
 | ----------------------------- | ------------------------------- | ------------------------------- |
-|  Check IP address           | `ip a`                          | Correct Kali IP displayed       |
-|  Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
-|  Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
-|  Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
+|  Check IP address           | `ip a`                          |10.0.0.2/24      |
+|  Test gateway               | `ping 10.0.0.1`                 | 10.0.0.1              |
+|  Test Internet connectivity | `ping 8.8.8.8`                  | google was loaded              |
+|  Test DNS resolution        | `nslookup networkwalks.com`     | 8.8.8.8                 |
 |  Verify Nmap                | `nmap --version`                | Nmap version displayed          |
 |  Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
 
